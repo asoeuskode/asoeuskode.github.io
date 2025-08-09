@@ -1,28 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi sitio web</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asociación Euskode</title>
+  <meta name="description" content="Euskode - Tecnología abierta para asociaciones. Desarrollamos aplicaciones y sitios web para potenciar la gestión y presencia digital de colectivos y ONGs.">
+  <link rel="icon" type="image/svg+xml" href="https://github.com/asoeuskode.png" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi sitio web</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Sobre mí</h2>
-        <p>Esta es una breve descripción sobre mí y mis intereses.</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 Mi sitio web. Todos los derechos reservados.</p>
-    </footer>
+
+  <header class="header-main">
+    <div class="header-content">
+      <img src="img/euskode-avatar.svg" alt="Logo Euskode" class="logo-avatar" />
+      <div>
+        <h1>Asociación Euskode</h1>
+        <p class="subtitle">Tecnología abierta para asociaciones y comunidad</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar-sticky">
+    <a href="#quienes-somos">Quiénes somos</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#partners">Seamos partners</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="quienes-somos" class="section-bg">
+      <div class="card">
+        <h2>Quiénes somos</h2>
+        <p>
+          En Euskode impulsamos la transformación digital de asociaciones, ONGs y colectivos a través de soluciones tecnológicas abiertas y colaborativas.
+          Nuestro objetivo es facilitar la gestión, comunicación y presencia online, poniendo la tecnología al servicio de la comunidad.<br><br>
+          Creemos en el trabajo en equipo, el software libre y el impacto social positivo.
+        </p>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section-highlight">
+      <div class="card">
+        <h2>Proyectos</h2>
+        <ul class="projects-list">
+          <li>
+            <strong>Gatístico</strong><br>
+            Aplicación web y móvil para facilitar la gestión de protectoras de gatos. Ayuda con el registro, seguimiento y coordinación de adopciones, voluntariado, y atención veterinaria.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="partners" class="section-bg">
+      <div class="card">
+        <h2>Seamos partners</h2>
+        <p>
+          ¿Eres una asociación, ONG, colectivo o grupo interesado en mejorar tu gestión y presencia digital?<br>
+          <strong>¡Colabora con Euskode!</strong><br>
+          Te ayudamos a crear herramientas a medida, digitalizar procesos, y potenciar tu impacto social.<br><br>
+          <span class="cta-partner">
+            <a href="mailto:asoeuskode@gmail.com?subject=Quiero colaborar con Euskode" class="btn-partner">Quiero ser partner</a>
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-bg">
+      <div class="card">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" width="20" class="icon" alt="Email" />
+            Email: <a href="mailto:asoeuskode@gmail.com">asoeuskode@gmail.com</a>
+          </li>
+          <li>
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20" class="icon" alt="GitHub" />
+            GitHub: <a href="https://github.com/asoeuskode" target="_blank">github.com/asoeuskode</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Asociación Euskode — Tecnología para la comunidad</p>
+  </footer>
+
 </body>
 </html>
