@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asociación Euskode</title>
+  <meta name="description" content="Euskode - Tecnología abierta para asociaciones. Desarrollamos aplicaciones y sitios web para potenciar la gestión y presencia digital de colectivos y ONGs.">
+  <link rel="icon" type="image/svg+xml" href="https://github.com/asoeuskode.png" />
+  <style>
+    :root {
+      --color-primary: #003366;
+      --color-secondary: #005fa3;
+      --color-light: #f7f9fa;
+      --color-card: #fff;
+      --color-text: #333;
+      --radius: 10px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.10);
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: var(--color-light);
+      color: var(--color-text);
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+      color: white;
+      padding: 2rem 1rem 1.5rem 1rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+      border-bottom-left-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
+    }
+    header h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: border-bottom 0.2s;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    nav a:hover, nav a:focus {
+      border-bottom: 2px solid #fff;
+    }
+    main {
+      flex: 1;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      width: 100%;
+    }
+    .card {
+      background: var(--color-card);
+      padding: 1.5rem 1.2rem;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 2rem;
+      animation: fadeIn 0.8s;
+    }
+    .card h2 {
+      color: var(--color-secondary);
+      margin-top: 0;
+      margin-bottom: 0.7rem;
+      font-size: 1.5rem;
+    }
+    .projects-list {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0 0 0;
+    }
+    .projects-list li {
+      margin-bottom: 0.4rem;
+      font-weight: 500;
+    }
+    .contact-list {
+      margin-top: 0.8rem;
+      list-style: none;
+      padding: 0;
+    }
+    .contact-list li {
+      margin-bottom: 0.5rem;
+      font-size: 1.07rem;
+    }
+    .contact-list a {
+      color: var(--color-secondary);
+      text-decoration: underline;
+      word-break: break-all;
+    }
+    .icon {
+      vertical-align: middle;
+      margin-right: 6px;
+      opacity: 0.8;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white;
+      font-size: 1rem;
+      margin-top: auto;
+      letter-spacing: 1px;
+      border-top-left-radius: var(--radius);
+      border-top-right-radius: var(--radius);
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem 0.4rem;
+      }
+      .card {
+        padding: 1rem 0.6rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Asociación Euskode</h1>
+    <nav>
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quienes-somos">
+      <div class="card">
+        <h2>Quiénes somos</h2>
+        <p>
+          En Euskode impulsamos la transformación digital de asociaciones, ONGs y colectivos a través de soluciones tecnológicas abiertas y colaborativas.
+          Nuestro objetivo es facilitar la gestión, comunicación y presencia online, poniendo la tecnología al servicio de la comunidad.<br><br>
+          Creemos en el trabajo en equipo, el software libre y el impacto social positivo.
+        </p>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="card">
+        <h2>Proyectos</h2>
+        <ul class="projects-list">
+          <li>
+            <strong>Plataforma web para asociaciones culturales</strong><br>
+            Espacios digitales para la gestión de eventos, socios y comunicación interna.
+          </li>
+          <li>
+            <strong>Sistema de gestión interna para ONGs</strong><br>
+            Herramientas personalizadas de administración, seguimiento y reporte.
+          </li>
+          <li>
+            <strong>Webs informativas para grupos vecinales</strong><br>
+            Portales accesibles y dinámicos para fortalecer la participación ciudadana.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="card">
+        <h2>Contacto</h2>
+        <ul class="contact-list">
+          <li>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" width="20" class="icon" alt="Email" />
+            Email: <a href="mailto:asoeuskode@example.com">asoeuskode@example.com</a>
+          </li>
+          <li>
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="20" class="icon" alt="GitHub" />
+            GitHub: <a href="https://github.com/asoeuskode" target="_blank">github.com/asoeuskode</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Asociación Euskode — Tecnología para la comunidad</p>
+  </footer>
+
+</body>
+</html>
