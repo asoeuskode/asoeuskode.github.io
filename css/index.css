@@ -27,8 +27,6 @@ body {
   padding: 1.7rem 1rem 1.2rem 1rem;
   text-align: center;
   box-shadow: var(--shadow);
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
   position: relative;
 }
 
@@ -100,14 +98,14 @@ main {
 
 .section-bg {
   background: var(--color-bg-section);
-  padding: 1.5rem 0;
+  padding: .5rem 0;
   border-radius: var(--radius);
   margin-bottom: 1.2rem;
 }
 
 .section-highlight {
   background: linear-gradient(90deg, #eaf7ff, #e4f0e8 60%);
-  padding: 1.5rem 0;
+  padding: .5rem 0;
   border-radius: var(--radius);
   margin-bottom: 1.2rem;
 }
@@ -117,7 +115,7 @@ main {
   padding: 1.7rem 1.3rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   animation: fadeIn 0.8s;
 }
 
