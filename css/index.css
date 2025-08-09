@@ -1,0 +1,124 @@
+:root {
+  --color-primary: #003366;
+  --color-secondary: #005fa3;
+  --color-light: #f7f9fa;
+  --color-card: #fff;
+  --color-text: #333;
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: var(--color-light);
+  color: var(--color-text);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: 2rem 1rem 1.5rem 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+nav {
+  margin-top: 1rem;
+}
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: border-bottom 0.2s;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+nav a:hover, nav a:focus {
+  border-bottom: 2px solid #fff;
+}
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+  width: 100%;
+}
+.card {
+  background: var(--color-card);
+  padding: 1.5rem 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s;
+}
+.card h2 {
+  color: var(--color-secondary);
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+}
+.projects-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0 0 0;
+}
+.projects-list li {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+.contact-list {
+  margin-top: 0.8rem;
+  list-style: none;
+  padding: 0;
+}
+.contact-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.07rem;
+}
+.contact-list a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  word-break: break-all;
+}
+.icon {
+  vertical-align: middle;
+  margin-right: 6px;
+  opacity: 0.8;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+  margin-top: auto;
+  letter-spacing: 1px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+}
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.4rem;
+  }
+  .card {
+    padding: 1rem 0.6rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px);}
+  to { opacity: 1; transform: translateY(0);}
+}
